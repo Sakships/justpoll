@@ -15,7 +15,7 @@ export class UserEntity extends BaseEntity {
       nullable: true,
       unique: false,
     })
-    userName!: string;
+    username!: string;
     @Column({
       nullable: true,
       unique: true,
@@ -36,7 +36,7 @@ export class UserEntity extends BaseEntity {
       nullable: true,
       unique: false,
     })
-    phonenumber!: number;
+    phonenumber!: string;
     @Column({
       nullable: true,
       unique: false,
@@ -62,7 +62,7 @@ export class UserEntity extends BaseEntity {
       unique: false,
     })
     
-    ispremiunuser!:boolean;
+    ispremiumuser!:boolean;
     postcount!: number;
     followerscount!: number;
     followingcount!: number;
