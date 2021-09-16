@@ -1,10 +1,10 @@
 import { Router } from "express";
-import { RegistrationController } from "../controllers/registration.controller";
-const  Controller = require("../controllers/signup.controller")
+import {  UserController} from "../controllers/user.controller";
+
 const router=Router();
 
-router.post("/sign-up",Controller.signUp);
-router.post("/verifyotp",Controller.verifyOtp);
-router.post("/registration",RegistrationController.registration);
-router.post("/login",RegistrationController.login);
+router.post("/sign-up",UserController.signup);
+router.post("/verifyotp",UserController.verifyotp);
+router.post("/registration",UserController.registration);
+router.post("/login",UserController.login);
 export {router};

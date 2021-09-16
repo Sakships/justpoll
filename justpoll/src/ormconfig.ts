@@ -16,7 +16,7 @@ const connectionOptions: ConnectionOptions = {
   password: "123456789",
   database: "postgres",
   entities: [UserEntity],
-  synchronize: true,
+  synchronize: false,
   dropSchema: false,
   migrationsRun: true,
   logging: false,
